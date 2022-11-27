@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SearchMe | Home</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ==" crossorigin="anonymous" />
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="icona.png" type="image/png" />
+  
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chisiamo.html">Chi Siamo</a></li>
+      <li><a href="contatti.html"> Contattaci</a></li>
+    </ul>
+    <div class="cta">
+      <a href="contatti.html" class="button"> Contattaci</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero__content reveal">
+      <h1 class="big-text" style>Servizio di <span style="color: rgb(0, 183, 255);">Social Media Managing</span>.</h1>
+      <a href="chisiamo.html" class="button">Scopri Altro</a>
+    </div>
+    <video autoplay muted loop id="video-back">
+      <source src="video-back.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+
+  <div class="poster mt-3">
+    <div class="poster__img reveal">
+      <img src="doodle.png.jpg" alt="">
+    </div>
+    <div class="poster__content reveal">
+      <h3 class="big-text">Chi siamo.</h3>
+      <p>Siamo due adolescenti che cercano un'alternanza scuola lavoro che possa coinvolgere le proprie capacità e aiutare gli altri con le nostre conoscenze.</p>
+      <p>Ci riteniamo idonei per questo tipo di lavoro perchè la generazione in cui siamo nati ci ha indirizzato ad includere la tecnologia nella nostra vita lavorativa.</p>
+      <a href="chisiamo.html" class="button">Più dettagli</a>
+    </div>
+  </div>
+
+
+  <div class="bg-cover mt-3">
+    <div class="bg-cover__title reveal">
+      <h3 class="big-text tw">I Nostri <span style="color: rgb(0, 183, 255)">Servizi</span>.</h3>
+    </div>
+    <div class="bg-cover__text reveal">
+
+      <h4 class="med-text tw">Grafica</h4>
+      <br>
+      <p class="tw">Offriamo un servizio di creazione di loghi personalizzati per i propri Social Networks e/o per l'insegna del proprio negozio. Stili all'avanguardia, classici, eleganti, vettoriali, minimalistici e monogrammatici.  </p>
+      <br>
+      <br>
+      <h4 class="med-text tw">Social Media Managing</h4>
+      <br>
+      
+      <p class="tw">Ottimizziamo il vostro profilo online pianificando i post, creando contenuti coinvolgenti e informativi per la vostra attività e raggiungendo obiettivi che soddisfano le vostre esigenze.</p>
+      <br>
+      <br>
+      <h4 class="med-text tw">Aumento dei clienti</h4>
+      <br>
+      <p class="tw">Aumentiamo la vostra visibilità e clientela esponenzialmente tramite il servizio Facebook e Instagram Ads che facciano risaltare il vostro profilo nella home page di tutti gli utenti dei Social Media precedentemente elencati.</p>
+
+    </div>
+  
+    
+
+  </div>
+
+  
+
+<footer class="footer">
+  <div class="col">
+    <br><br><br><br><br>
+    <h5>Copyright © SearchMe | Managed by Rosario Barone & Battaglia Andrea</h5>
+  </div>
+  
+</footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
+
+  <script>
+  $( document ).ready(function() {
+
+    /* Open Panel */
+    $( ".hamburger" ).on('click', function() {
+      $(".menu").toggleClass("menu--open");
+    });
+
+  });
+
+
+  ScrollReveal().reveal('.reveal',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+
+  ScrollReveal().reveal('.zoom',  { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65, mobile: false});
+
+
+
+</script>
+
+
+</body>
+</html>
